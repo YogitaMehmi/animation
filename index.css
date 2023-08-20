@@ -1,0 +1,169 @@
+body {
+    margin: 0;
+}
+
+.container {
+    max-width: 988px;
+    height: auto;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.box-wrapper {
+    margin: 0 auto;
+    height: 250px;
+    width: 250px;
+    background-color: rgba(0,0,255,0.2);
+}
+
+.box-v1 {
+    background-color: rgb(252, 55, 55);
+    border-radius: 5px;
+    height: 50px;
+    width: 50px;
+}
+
+.box-1 {
+    animation: animate-1 4s infinite linear;
+    position: relative;
+    top: 0;
+}
+
+ @keyframes animate-1 {
+    0% {
+        top: 200px;
+        left: 0;
+     }
+
+    25% {
+        top: 200px;
+        left: 200px;
+    }
+
+    50% {
+        top: 0;
+        left: 200px;
+    }
+
+    75% {
+        top: 0;
+        left: 0;
+    }
+
+    100% {
+        top: 200px;
+        left: 0;
+    }
+}
+
+.box-2 {
+    margin-top: 50px;
+    animation: animate-2 0.004s infinite alternate linear;
+    position: relative;
+}    
+
+@keyframes animate-2 {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 200px;
+    }
+} 
+
+.box-wrapper-2 { 
+    height: 800px;
+    display: flex;
+    align-items: flex-end;
+    background-color: rgba(0,0,0,0.2);
+    gap: 6px;
+    overflow: hidden;
+}    
+
+.box-v2 {
+    background-color: rgba(0,0,0,0.4);
+    position: relative;
+    bottom: -10%;
+    border-radius: 10%;
+    animation-name: animate-3;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}    
+
+.box-3 {
+    height: 60px;
+    width: 60px;
+    left: 10px;
+    animation-duration: 12s; 
+    animation-delay: 3s;
+}    
+.box-4 {
+    height: 80px;
+    width: 100px;
+    animation-duration: 13s; 
+    animation-delay: 5s;
+}    
+.box-5 {
+    height: 70px;
+    width: 80px;
+    animation-duration: 4s; 
+    animation-delay: 8s;
+}    
+.box-6 {
+    height: 50px;
+    width: 80px;
+    left: 39px;
+    animation-duration: 7s; 
+    animation-delay: 9s;
+}    
+.box-7 {
+    height: 90px;
+    width: 100px;
+    left: 300px;
+    animation-duration: 15s; 
+    animation-delay: 19s;
+}    
+.box-8 {
+    height: 165px;
+    width: 160px;
+    animation-duration: 9s; 
+    animation-delay: 9s;
+}    
+.box-9 {
+    height: 85px;
+    width: 150px;
+    animation-duration: 10s;
+    animation-delay: 7s;
+}    
+.box-10 {
+    height: 100px;
+    width: 90px;
+    animation-duration: 20s; 
+    animation-delay: 17s;
+}    
+
+@keyframes animate-3 {
+    from {
+        bottom: -20%;
+        border-radius: 35%;
+        left: 20%;
+    }    
+    
+    50% {
+        border-radius: 10%;
+        left: 0;
+    }    
+
+    to {
+        bottom: 100%;
+        border-radius: 50%;
+        left: 15%;
+    }    
+}    
+
